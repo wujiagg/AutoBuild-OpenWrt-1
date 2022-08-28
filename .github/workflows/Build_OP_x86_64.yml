@@ -15,8 +15,8 @@ on:
     branches: 
       - master
 
-  #schedule:
-  #  - cron: 0 8 * * 5
+  schedule:
+    - cron: 0 8 * * 5
   
   #watch:
   #  types: [started]
@@ -67,6 +67,8 @@ jobs:
         cd openwrt
         echo "src-git ssrp https://github.com/fw876/helloworld.git" >> ./feeds.conf.default
         svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
+        git clone https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
+        git clone -b luci https://github.com/xiaorouji/openwrt-passwall package/passwall
         
     - name: Update & Install feeds
       working-directory: ./openwrt
