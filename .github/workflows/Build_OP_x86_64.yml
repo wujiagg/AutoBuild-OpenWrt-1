@@ -72,7 +72,7 @@ jobs:
         git clone https://github.com/yaof2/luci-app-ikoolproxy package/luci-app-ikoolproxy
         git clone https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
         git clone -b luci https://github.com/xiaorouji/openwrt-passwall package/passwall
-        
+        git clone https://github.com/xiaozhuai/luci-app-filebrowser package/luci-app-filebrowser
         
     - name: Update & Install feeds
       working-directory: ./openwrt
