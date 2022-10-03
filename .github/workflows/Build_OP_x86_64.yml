@@ -67,7 +67,7 @@ jobs:
         cd openwrt
         #  git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
         svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
-        git clone https://github.com/kiddin9/openwrt-bypass.git package/openwrt-bypass
+        #  git clone https://github.com/kiddin9/openwrt-bypass.git package/openwrt-bypass
         git clone https://github.com/QiuSimons/openwrt-mos.git package/openwrt-mos
         git clone https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
         git clone -b luci https://github.com/xiaorouji/openwrt-passwall package/passwall        
