@@ -66,12 +66,13 @@ jobs:
         git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
         cd openwrt
         #  git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
-        echo "src-git small8 https://github.com/kenzok8/small-package.git" >> ./feeds.conf.default
-        svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
+        #  echo "src-git small8 https://github.com/kenzok8/small-package.git" >> ./feeds.conf.default
         #  git clone https://github.com/kiddin9/openwrt-bypass.git package/openwrt-bypass
         git clone https://github.com/QiuSimons/openwrt-mos.git package/openwrt-mos
         git clone https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
-        git clone -b luci https://github.com/xiaorouji/openwrt-passwall package/passwall         
+        git clone -b luci https://github.com/xiaorouji/openwrt-passwall package/passwall
+        git clone https://github.com/kenzok8/small-package package/small-package
+        svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
         
     - name: Update & Install feeds
       working-directory: ./openwrt
