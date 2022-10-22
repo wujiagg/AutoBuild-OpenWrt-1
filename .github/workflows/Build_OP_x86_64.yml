@@ -79,6 +79,7 @@ jobs:
 
         #  git clone https://github.com/kenzok8/small-package.git package/small-package
         svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
+        git clone https://github.com/xiaozhuai/luci-app-filebrowser package/luci-app-filebrowser
         
     - name: Update & Install feeds
       working-directory: ./openwrt
